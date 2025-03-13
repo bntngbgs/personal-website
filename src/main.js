@@ -1,24 +1,57 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import './style.css';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+const navBar = document.querySelector('.navbar');
+const navLink = document.querySelectorAll('.navlink');
+const mobileBtn = document.querySelector('.mobile-btn');
+let isMenuOpen = false;
 
-setupCounter(document.querySelector('#counter'))
+navLink.forEach((item) => {
+  if (item.pathname == '/index.html' && location.pathname == '/') {
+    item.classList.add('active');
+  } else if (item.href == location.href) {
+    item.classList.add('active');
+  } else {
+    item.classList.remove('active');
+  }
+
+  console.log(item);
+  console.log(location.pathname);
+});
+
+mobileBtn.addEventListener('click', () => {
+  if (!isMenuOpen) {
+    mobileBtn.classList.add('active-mobile');
+    navBar.classList.add('open');
+
+    setTimeout(() => {
+      navBar.classList.add('slide-in');
+    }, 100);
+
+    isMenuOpen = true;
+  } else {
+    mobileBtn.classList.remove('active-mobile');
+    navBar.classList.remove('slide-in');
+
+    setTimeout(() => {
+      navBar.classList.remove('open');
+    }, 300);
+
+    isMenuOpen = false;
+  }
+});
+
+const closeMobileNav = () => {
+  if (isMenuOpen) {
+    mobileBtn.classList.remove('active-mobile');
+    navBar.classList.remove('slide-in');
+
+    setTimeout(() => {
+      navBar.classList.remove('open');
+    }, 300);
+    isMenuOpen = false;
+  }
+};
+
+window.addEventListener('resize', closeMobileNav);
+
+window.addEventListener('scroll', closeMobileNav);

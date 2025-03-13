@@ -1,13 +1,503 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,400;0,500;0,700;1,400&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bintang's Portfolio</title>
   </head>
+
   <body>
-    <div id="app"></div>
+    <!-- HEADER START -->
+    <header id="header">
+      <div class="container header">
+        <!-- LOGO START -->
+        <div class="logo">
+          <img src="./src/assets/icons/logo.webp" alt="website logo" />
+        </div>
+        <!-- LOGO END -->
+        <!-- NAVBAR START-->
+        <nav class="navbar">
+          <ul class="navlist">
+            <li class="navitem">
+              <a href="/index.html" class="navlink">Home</a>
+            </li>
+            <li class="navitem">
+              <a href="#tech-stack" class="navlink">Stacks</a>
+            </li>
+            <li class="navitem">
+              <a href="#project" class="navlink">Projects</a>
+            </li>
+            <li class="navitem">
+              <a href="#cta" class="navlink">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- NAVBAR END -->
+        <!-- MOBILE NAVIGATION START -->
+        <div class="mobile-btn">
+          <div class="line"></div>
+        </div>
+        <!-- MOBILE NAVIGATION END -->
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main>
+      <!-- HERO START -->
+      <section id="hero">
+        <div class="container hero">
+          <div class="hero-text">
+            <h1 class="heading-1">BINTANG BAGUS PANGESTU</h1>
+            <p class="label">WEB DESIGNER</p>
+            <p class="label">SOFTWARE ENGINEER</p>
+            <p>
+              A fresh graduate in Information Technology, skilled in front-end
+              web development capable of creating design systems, making
+              wireframe and mockups, translating design to code, all the way to
+              developing beautiful, responsive and interactive websites. Also,
+              have a bit of backend scripting experience.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/bintangbaguus/"
+              class="btn cta-about"
+              >More about me</a
+            >
+          </div>
+          <div class="hero-image">
+            <img
+              src="./src/assets/images/profile.webp"
+              alt="bintang's photograph"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- HERO END -->
+
+      <!-- TECH-STACK START -->
+      <section id="tech-stack">
+        <div class="container tech-stack">
+          <h2 class="heading-2">TECH STACK :</h2>
+          <div class="tech-list">
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/figma.svg" alt="figma" />
+              </div>
+              <p>Figma</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/html.svg" alt="html" />
+              </div>
+              <p>HTML</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/css.svg" alt="css" />
+              </div>
+              <p>CSS</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/sass.svg" alt="sass" />
+              </div>
+              <p>SASS</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img
+                  src="./src/assets/icons/tailwindcss.svg"
+                  alt="tailwind css"
+                />
+              </div>
+              <p>Tailwind</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/javascript.svg" alt="javascript" />
+              </div>
+              <p>Javascript</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/react.svg" alt="react" />
+              </div>
+              <p>React</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/redux.svg" alt="redux" />
+              </div>
+              <p>Redux</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/npm.svg" alt="npm" />
+              </div>
+              <p>NPM</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/vite.svg" alt="vite" />
+              </div>
+              <p>Vite</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/nodejs.svg" alt="node js" />
+              </div>
+              <p>Node</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/express.svg" alt="express" />
+              </div>
+              <p>Express</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/mongoose.svg" alt="mongoose" />
+              </div>
+              <p>Mongoose</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/sequelize.svg" alt="sequelize" />
+              </div>
+              <p>Sequelize</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/postgresql.svg" alt="postgresql" />
+              </div>
+              <p>PostgreSQL</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/jest.svg" alt="jest" />
+              </div>
+              <p>Jest</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/docker.svg" alt="docker" />
+              </div>
+              <p>Docker</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/linux.svg" alt="linux" />
+              </div>
+              <p>Linux</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/git.svg" alt="git" />
+              </div>
+              <p>Git</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/github.svg" alt="github" />
+              </div>
+              <p>Github</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/netlify.svg" alt="netlify" />
+              </div>
+              <p>Netlify</p>
+            </div>
+            <div class="tech-label">
+              <div class="tech-logo">
+                <img src="./src/assets/icons/vercel.svg" alt="vercel" />
+              </div>
+              <p>Vercel</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TECH-STACK END -->
+
+      <!-- PROJECT START -->
+      <section id="project">
+        <div class="container project">
+          <h2 class="heading-2">PROJECTS :</h2>
+          <div class="card-container">
+            <div class="card">
+              <div class="card-image">
+                <img src="./src/assets/images/project-1.webp" alt="project 1" />
+              </div>
+              <div class="card-text">
+                <h2>Goodfood</h2>
+                <div class="card-label-wrapper">
+                  <p class="card-label">Fullstack MERN</p>
+                  <p class="card-label">SASS / SCSS</p>
+                </div>
+                <p>
+                  Built with MERN stack as main technologies and Redux toolkit
+                  for state management and persistent data login. Users can make
+                  order and automatticaly receive invoice for orders.
+                </p>
+                <div class="project-link-wrapper">
+                  <a
+                    href="https://github.com/bntngbgs/food-ordering-client"
+                    class="btn card-btn"
+                    target="_blank"
+                  >
+                    <svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>GitHub</title>
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      />
+                    </svg>
+                    Github Repo</a
+                  >
+                  <a
+                    href="https://goodfood-portfolio.netlify.app/"
+                    class="btn card-btn"
+                    target="_blank"
+                  >
+                    Live Site
+                    <svg
+                      fill="#000000"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g data-name="Layer 2">
+                          <g data-name="external-link">
+                            <rect width="24" height="24" opacity="0"></rect>
+                            <path
+                              d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z"
+                            ></path>
+                            <path
+                              d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./src/assets/images/project-2.webp" alt="project-2" />
+              </div>
+              <div class="card-text">
+                <h2>Synths Lab</h2>
+                <div class="card-label-wrapper">
+                  <p class="card-label">React</p>
+                  <p class="card-label">Tailwind CSS</p>
+                  <p class="card-label">Framer Motion</p>
+                </div>
+                <p>
+                  A fashion and beauty products website. Built using React JS,
+                  tailwind CSS for styling and Framer Motion to smootly animate
+                  the website. User can see all the products or filter it by
+                  category.
+                </p>
+                <div class="project-link-wrapper">
+                  <a
+                    href="https://github.com/bntngbgs/synths-lab"
+                    class="btn card-btn"
+                    target="_blank"
+                  >
+                    <svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>GitHub</title>
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      />
+                    </svg>
+                    Github Repo</a
+                  >
+                  <a
+                    href="https://synths-lab.netlify.app/"
+                    class="btn card-btn"
+                    target="_blank"
+                  >
+                    Live Site
+                    <svg
+                      fill="#000000"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g data-name="Layer 2">
+                          <g data-name="external-link">
+                            <rect width="24" height="24" opacity="0"></rect>
+                            <path
+                              d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z"
+                            ></path>
+                            <path
+                              d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./src/assets/images/project-3.webp" alt="project 3" />
+              </div>
+              <div class="card-text">
+                <h2>Blique Resto</h2>
+                <div class="card-label-wrapper">
+                  <p class="card-label">HTML</p>
+                  <p class="card-label">Vanilla JS</p>
+                  <p class="card-label">Tailwind CSS</p>
+                </div>
+                <p>
+                  Showcasing a fine dining restaurant reservation design for
+                  website. Users can see the featured menu and making a
+                  reservation for dine in. built with just Tailwind JS and
+                  vanilla JS for some interactivity.
+                </p>
+                <div class="project-link-wrapper">
+                  <a
+                    href="https://github.com/bntngbgs/blique-resto"
+                    class="btn card-btn"
+                    target="_blank"
+                  >
+                    <svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>GitHub</title>
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      />
+                    </svg>
+                    Github Repo</a
+                  >
+                  <a
+                    href="https://blique-resto.netlify.app/"
+                    class="btn card-btn"
+                    target="_blank"
+                  >
+                    Live Site
+                    <svg
+                      fill="#000000"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g data-name="Layer 2">
+                          <g data-name="external-link">
+                            <rect width="24" height="24" opacity="0"></rect>
+                            <path
+                              d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1z"
+                            ></path>
+                            <path
+                              d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2z"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROJECT END -->
+
+      <!-- CALL-TO-ACTION START -->
+      <section id="cta">
+        <div class="container cta">
+          <div class="cta-text">
+            <h2 class="heading-2">Interested in Working Together?</h2>
+            <h2 class="heading-2">Reach me out.</h2>
+          </div>
+          <div class="cta-arrow">
+            <img src="./src/assets/images/arrow.png" alt="" />
+          </div>
+          <div class="cta-button">
+            <div class="cta-logo">
+              <a href="mailto:bintangbgs16@gmail.com">
+                <img src="./src/assets/icons/gmail.svg" alt="gmail-logo" />
+              </a>
+            </div>
+            <div class="cta-logo">
+              <a
+                href="https://www.linkedin.com/in/bintangbaguus/"
+                target="_blank"
+              >
+                <img
+                  src="./src/assets/icons/linkedin.svg"
+                  alt="linkedin-logo"
+                />
+              </a>
+            </div>
+            <div class="cta-logo">
+              <a href="https://wa.me/qr/CR64CA6PUPM3P1" target="_blank">
+                <img src="./src/assets/icons/whatsapp.svg" alt="wa-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CALL-TO-ACTION END -->
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer>
+      <div class="container footer">
+        <p>
+          Handcrafted by
+          <span
+            ><a href="https://github.com/bntngbgs" target="_blank">me</a></span
+          >
+        </p>
+        <img src="./src/assets/icons/logo.webp" alt="website logo" />
+        <p>&copy; Bintang Bagus Pangestu 2025</p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
