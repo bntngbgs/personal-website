@@ -78,20 +78,27 @@ const animateOnScroll = (entries) => {
         entry.target.children[0].classList.add('animate-cta');
       }
     } else {
-      setTimeout(() => {
-        entry.target.children[0].classList.remove('animate-hero');
-        entry.target.children[0].classList.remove('animate-tech');
-        entry.target.children[0].classList.remove('animate-cta');
-        if (!isMobile) {
-          entry.target.children[0].classList.remove('animate-project');
-        }
-      }, 800);
+      if (entry.target.id !== 'cta') {
+        setTimeout(() => {
+          if (entry.target.id == 'hero') {
+            entry.target.children[0].classList.remove('animate-hero');
+          }
+
+          if (entry.target.id == 'tech-stack') {
+            entry.target.children[0].classList.remove('animate-tech');
+          }
+          if (!isMobile) {
+            entry.target.children[0].classList.remove('animate-project');
+          }
+        }, 200);
+      }
+      // entry.target.children[0].classList.remove('animate-cta');
     }
   });
 };
 
 const options = {
-  rootMargin: isMobile ? '0px' : '195px 0px 95px 0px',
+  rootMargin: isMobile ? '0px' : '180px 0px 120px 0px',
   threshold: isMobile ? 0.25 : 0.5,
 };
 
