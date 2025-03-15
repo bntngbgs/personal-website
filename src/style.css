@@ -621,16 +621,13 @@ footer {
 @keyframes animate-slide {
   0% {
     transform: translateX(0);
-    opacity: 0;
   }
 
   50% {
     transform: translateX(60px);
-    opacity: 0.25;
   }
 
   100% {
-    opacity: 1;
     transform: translateX(0);
   }
 }
@@ -638,13 +635,16 @@ footer {
 @keyframes animate-down {
   0% {
     transform: rotate(90deg) translateX(0);
+    opacity: 0;
   }
 
   50% {
+    opacity: 0.25;
     transform: rotate(90deg) translateX(-180px);
   }
 
   100% {
+    opacity: 1;
     transform: rotate(90deg) translateX(0);
   }
 }
