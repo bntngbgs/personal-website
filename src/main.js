@@ -77,12 +77,21 @@ const animateOnScroll = (entries) => {
       if (entry.target.id === 'cta') {
         entry.target.children[0].classList.add('animate-cta');
       }
+    } else {
+      setTimeout(() => {
+        entry.target.children[0].classList.remove('animate-hero');
+        entry.target.children[0].classList.remove('animate-tech');
+        entry.target.children[0].classList.remove('animate-cta');
+        if (!isMobile) {
+          entry.target.children[0].classList.remove('animate-project');
+        }
+      }, 800);
     }
   });
 };
 
 const options = {
-  rootMargin: '0px',
+  rootMargin: isMobile ? '0px' : '195px 0px 95px 0px',
   threshold: isMobile ? 0.25 : 0.5,
 };
 

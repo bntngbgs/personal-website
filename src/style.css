@@ -312,7 +312,7 @@ a:is(:link, :active, :visited).active {
 .tech-label {
   transform: translateY(30px);
   transition: transform 1s, opacity 1s;
-  transition-delay: calc(var(--index) * 20ms);
+  transition-delay: calc(var(--index) * 50ms);
 }
 
 .tech-stack h2 {
@@ -426,8 +426,21 @@ a:is(:link, :active, :visited).active {
 
 .card-container .card {
   transform: translateX(calc(var(--index) * -50px));
-  transition-delay: calc(var(--index) * 100ms);
+  transition-delay: calc(var(--index) * 200ms);
 }
+
+/* Is it matters to add different delay considering that the item has the index that different?  */
+/* .card-container .card:nth-child(1) {
+  transition-delay: calc(var(--index) * 800ms);
+}
+
+.card-container .card:nth-child(2) {
+  transition-delay: calc(var(--index) * 1000ms);
+}
+
+.card-container .card:nth-child(3) {
+  transition-delay: calc(var(--index) * 1200ms);
+} */
 
 .project.animate-project :is(h2, .card) {
   opacity: 1;
@@ -909,6 +922,11 @@ footer {
 
   .tech-label p {
     font-size: 1.15rem;
+  }
+
+  .card-container .card {
+    /* transform: translateX(calc(var(--index) * -50px)); */
+    transition-delay: calc(var(--index) * 800ms);
   }
 
   .card-text > h2 {
