@@ -6,6 +6,7 @@ const mobileBtn = document.querySelector('.mobile-btn');
 // const heroSection = document.getElementById('hero');
 const pageSection = document.querySelectorAll('section');
 let isMenuOpen = false;
+const isMobile = window.innerWidth < 768;
 
 // navLink.forEach((item) => {
 //   if (item.pathname == '/index.html' && location.pathname == '/') {
@@ -61,6 +62,7 @@ const animateOnScroll = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       if (entry.target.id === 'hero') {
+        navLink[0].classList.add('active');
         entry.target.children[0].classList.add('animate-hero');
       }
 
@@ -81,7 +83,7 @@ const animateOnScroll = (entries) => {
 
 const options = {
   rootMargin: '0px',
-  threshold: 0.5,
+  threshold: isMobile ? 0.25 : 0.5,
 };
 
 const observer = new IntersectionObserver(animateOnScroll, options);
