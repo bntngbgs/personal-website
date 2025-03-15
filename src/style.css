@@ -530,7 +530,7 @@ a:is(:link, :active, :visited).active {
 .cta.animate-cta .cta-arrow {
   opacity: 1;
   visibility: visible;
-  animation: animate-slide 1350ms alternate;
+  animation: animate-slide 1550ms alternate;
   animation-delay: 1.1s;
 }
 
@@ -621,13 +621,16 @@ footer {
 @keyframes animate-slide {
   0% {
     transform: translateX(0);
+    opacity: 0;
   }
 
   50% {
     transform: translateX(60px);
+    opacity: 0.25;
   }
 
   100% {
+    opacity: 1;
     transform: translateX(0);
   }
 }
