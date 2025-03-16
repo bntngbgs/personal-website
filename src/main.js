@@ -98,7 +98,7 @@ const animateOnScroll = (entries) => {
 };
 
 const options = {
-  rootMargin: isMobile ? '0px' : '180px 0px 120px 0px',
+  rootMargin: isMobile ? '20px 0px 10px 0px' : '180px 0px 120px 0px',
   threshold: isMobile ? 0.25 : 0.5,
 };
 

@@ -926,7 +926,7 @@ footer {
 
   .card-container .card {
     /* transform: translateX(calc(var(--index) * -50px)); */
-    transition-delay: calc(var(--index) * 800ms);
+    transition-delay: calc(var(--index) * 600ms);
   }
 
   .card-text > h2 {
